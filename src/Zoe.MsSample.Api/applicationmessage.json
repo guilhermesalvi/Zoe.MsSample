@@ -1,0 +1,114 @@
+﻿{
+  // Idempotency
+  "ApplicationMessage": [
+    {
+      "Selector": "IDEMPOTENCY_INVALID_EMPTY_ID",
+      "FriendlyText": "Propriedade 'Id' não deve ser vazia em requisições idempotentes.",
+      "Language": "pt-br",
+      "ExternalCode": "IDEMPOTENCY_INVALID_EMPTY_ID"
+    },
+    {
+      "Selector": "IDEMPOTENCY_INVALID_NULL_COMMAND",
+      "FriendlyText": "Propriedade 'Command' não deve ser nula em requisições idempotentes.",
+      "Language": "pt-br",
+      "ExternalCode": "IDEMPOTENCY_INVALID_NULL_COMMAND"
+    },
+    {
+      "Selector": "IDEMPOTENCY_INVALID_NULL_REQUEST",
+      "FriendlyText": "Modelo não deve ser nulo em requisições idempotentes.",
+      "Language": "pt-br",
+      "ExternalCode": "IDEMPOTENCY_INVALID_NULL_REQUEST"
+    },
+    {
+      "Selector": "IDEMPOTENCY_INVALID_DUPLICATE_REQUEST",
+      "FriendlyText": "Requisição idempotente já existe no repositório.",
+      "Language": "pt-br",
+      "ExternalCode": "IDEMPOTENCY_INVALID_DUPLICATE_REQUEST"
+    },
+    // Application - CustomerAggregate
+    {
+      "Selector": "CUSTOMER_INVALID_ID_FORMAT",
+      "FriendlyText": "Deve ser informado um Identificador válido.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_ID_FORMAT"
+    },
+    {
+      "Selector": "CUSTOMER_ID_NOT_EXISTS",
+      "FriendlyText": "Cliente com Identificador informado não existe na base de dados.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_ID_NOT_EXISTS"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_EMPTY_FULLNAME",
+      "FriendlyText": "O Nome Completo do cliente deve ser informado.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_EMPTY_FULLNAME"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_FULLNAME_LENGHT",
+      "FriendlyText": "O Nome Completo do cliente deve ter entre 3 e 256 caracteres.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_FULLNAME_LENGHT"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_EMPTY_ALIAS",
+      "FriendlyText": "O Apelido do cliente deve ser informado.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_EMPTY_ALIAS"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_ALIAS_LENGHT",
+      "FriendlyText": "O Apelido do cliente deve ter entre 2 e 20 caracteres.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_ALIAS_LENGHT"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_EMPTY_EMAIL",
+      "FriendlyText": "O E-mail do cliente deve ser informado.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_EMPTY_EMAIL"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_EMAIL_FORMAT",
+      "FriendlyText": "O E-mail do cliente deve corresponder a um endereço de e-mail válido.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_EMAIL_FORMAT"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_EMAIL_LENGHT",
+      "FriendlyText": "O E-mail do cliente deve ter entre 5 e 256 caracteres.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_EMAIL_LENGHT"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_BIRTHDATE_FORMAT",
+      "FriendlyText": "A Data de Nascimento do cliente deve ter um formato válido.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_BIRTHDATE_FORMAT"
+    },
+    {
+      "Selector": "CUSTOMER_INVALID_OLDER_BIRTHDATE",
+      "FriendlyText": "A Data de Nascimento do cliente deve ser igual ou superior a 18 anos.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_INVALID_OLDER_BIRTHDATE"
+    },
+    {
+      "Selector": "CUSTOMER_EMAIL_ALREADY_EXISTS",
+      "FriendlyText": "O E-mail do cliente já existe na base de dados.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_EMAIL_ALREADY_EXISTS"
+    },
+    {
+      "Selector": "CUSTOMER_FAILURE_DURING_DATA_PROCESSING",
+      "FriendlyText": "Tivemos um problema durante o processamento dos dados.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_FAILURE_DURING_DATA_PROCESSING"
+    },
+    {
+      "Selector": "CUSTOMER_NON_EXISTENT",
+      "FriendlyText": "Cliente informado não existe na base de dados.",
+      "Language": "pt-br",
+      "ExternalCode": "CUSTOMER_NON_EXISTENT"
+    }
+  ]
+}
