@@ -29,6 +29,7 @@ namespace Zoe.MsSample.Api.Configuration
             app.UseSwaggerUI(x =>
             {
                 x.SwaggerEndpoint("/swagger/v1/swagger.json", "MsSample Api v1");
+                x.RoutePrefix = "docs";
             });
 
             return app;

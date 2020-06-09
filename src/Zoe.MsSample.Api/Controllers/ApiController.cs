@@ -30,14 +30,16 @@ namespace Zoe.MsSample.Api.Controllers
             this._appMessageManager = appMessageManager ?? throw new ArgumentNullException(nameof(appMessageManager));
         }
 
-        protected new IActionResult Response<T>(T data = null) where T : class
+        protected new IActionResult Response<T>(T data = null,
+                                                int successStatusCode = 200,
+                                                int unsuccessStatusCode = 422) where T : class
         {
             if (this.IsValidOperation)
             {
-                return Ok(new ResultBase<T>(data));
+                return StatusCode(successStatusCode, new ResultBase<T>(data));
             }
 
-            return StatusCode(422, new ResultBase<T>(this.RenderApplicationMessages()));
+            return StatusCode(unsuccessStatusCode, new ResultBase<T>(this.RenderApplicationMessages()));
         }
 
         protected async Task NotifyModelStateErrors()
